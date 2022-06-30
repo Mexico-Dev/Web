@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="320mm"
+   height="40mm"
+   viewBox="0 0 320 40"
+   version="1.1"
+   id="svg6225"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   sodipodi:docname="logoweb2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6227"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:snap-page="false"
+     inkscape:zoom="0.74208053"
+     inkscape:cx="811.90649"
+     inkscape:cy="22.908565"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs6222" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-3"
+       transform="matrix(0.2002352,0,0,0.2002352,-32.225797,-88.127009)">
+      <g
+         id="g295-3"
+         transform="matrix(3.9999999,0,0,-3.9999999,-29.74698,1004.6112)"
+         style="fill:#000000" />
+      <g
+         id="g67494"
+         transform="matrix(0.91467968,0,0,0.91467968,81.907489,46.072996)">
+        <text
+           transform="matrix(3.9999999,0,0,3.9999999,84.089017,635.40041)"
+           style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60.1516px;font-family:Poppins;-inkscape-font-specification:Poppins-Bold;writing-mode:lr-tb;fill:#006843;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text207-6"><tspan
+             x="0 55.790607"
+             y="0"
+             sodipodi:role="line"
+             id="tspan199-7">Me</tspan><tspan
+             x="93.415436 129.35602"
+             y="0"
+             sodipodi:role="line"
+             id="tspan201-5"
+             style="fill:#ffffff">xi</tspan><tspan
+             x="147.67218 184.60526"
+             y="0"
+             sodipodi:role="line"
+             id="tspan203-3"
+             style="fill:#ff0000">co</tspan><tspan
+             x="223.4632 267.75882 305.38367"
+             y="0"
+             sodipodi:role="line"
+             id="tspan205-5"
+             style="fill:#ffffff">Dev</tspan></text>
+        <g
+           id="g2684"
+           transform="matrix(2.5098302,0,0,-2.5098302,1108.8399,1203.4024)">
+          <g
+             id="g101"
+             transform="translate(283.7457,272.91312)">
+            <path
+               d="m 0,0 -32.826,17.271 -24.503,12.89 V 11.249 l 37.712,-19.84 -37.712,-19.841 V -47.344 L -32.826,-34.453 0,-17.182 Z"
+               style="fill:#f00922;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path103" />
+          </g>
+          <path
+             d="m 209.7662,284.16212 v 18.912 l -24.503,-12.89 -32.828,-17.271 v -17.182 l 32.828,-17.271 24.503,-12.891 v 18.912 l -37.713,19.841 z"
+             style="fill:#006843;fill-opacity:1;fill-rule:evenodd;stroke:none"
+             id="path107" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
