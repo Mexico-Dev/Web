@@ -4,7 +4,6 @@ import os, dotenv
 
 dotenv.load_dotenv()
 app = Flask(__name__)
-threads = []
 events = Events(
     guild_id="818251363012182023",
     token=os.environ.get("DISCORD_TOKEN")
