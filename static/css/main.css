@@ -15,13 +15,13 @@ p {
 
 @keyframes float {
 	0% {
-		transform: translatey(0px);
+		transform: translateY(0);
 	}
 	50% {
-		transform: translatey(-20px);
+		transform: translateY(-15px);
 	}
 	100% {
-		transform: translatey(0px);
+		transform: translateY(0);
 	}
 }
 
