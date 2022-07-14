@@ -50,6 +50,7 @@ class Events:
     def __markdown(self, text: str) -> str:
         for regex, rep in self.__regex.values():
             text = re.sub(regex, rep, text)
+            print(text)
         return text
         
         
