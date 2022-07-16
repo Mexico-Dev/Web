@@ -4,7 +4,7 @@ class GitHub:
     def __init__(self):
         self.client_id = os.environ.get('GITHUB_CLIENT_ID')
         self.client_secret = os.environ.get('GITHUB_CLIENT_SECRET')
-        self.scope = "user"
+        self.scope = "read:user"
         self.allow_signup = "true"
         self.redirect_uri = "https://mexicodev.org"
 
