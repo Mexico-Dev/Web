@@ -65,13 +65,29 @@
                         </a>
                     </li>
                 </ul>
+                {% if session['logged_in'] %}
+                <ul class="navbar-nav ms-auto links-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{ session['avatar'] }}" class="rounded-circle me-2" height="38"/>{{ session['username'] }}
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i> Mi cuenta</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-trophy"></i> Certificados</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Cerrar sesion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                {% else %}
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <div class="nav-link">
-                            <button type="button" class="btn btn-outline-light"><i class="fab fa-github"></i> Iniciar sesion</button>
+                            <a href="{{ url_for('login') }}"><button type="button" class="btn btn-outline-light"><i class="fab fa-github"></i> Iniciar sesion</button></a>
                         </div>
                     </li>
                 </ul>
+                {% endif %}
             </div>
         </div>
     </div>

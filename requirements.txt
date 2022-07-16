@@ -1,16 +1,16 @@
-# mxdev\app.py: 1
-Flask == 2.1.2
-
-# mxdev\app.py: 3
-python_dotenv == 0.20.0
-
-# mxdev\src\events.py: 2
-pytz == 2022.1
-
-# mxdev\src\events.py: 3
-requests == 2.28.1
-
-# Other packages:
-gunicorn == 20.1.0
-importlib-metadata == 4.12.0
-zipp == 3.8.0
+certifi==2022.6.15
+charset-normalizer==2.1.0
+click==8.1.3
+Flask==2.1.2
+gunicorn==20.1.0
+idna==3.3
+importlib-metadata==4.12.0
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.1
+python-dotenv==0.20.0
+pytz==2022.1
+requests==2.28.1
+urllib3==1.26.10
+Werkzeug==2.1.2
+zipp==3.8.0
