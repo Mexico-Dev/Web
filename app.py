@@ -15,7 +15,7 @@ app.secret_key = os.environ.get('APP_SECRET_KEY')
 @app.route('/')
 def index():
     elements = events.list
-    return render_template('index.html', events=elements[:3])
+    return render_template('index.html', events=elements[:4])
 
 @app.route('/login/auth')
 def auth():
