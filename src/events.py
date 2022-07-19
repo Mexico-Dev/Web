@@ -8,7 +8,12 @@ class Events:
     __regex = {
         "bold": (r"\*\*(.*?)\*\*", r"<b>\1</b>"),
         "italic": (r"_(.*?)_", r"<i>\1</i>"),
+        "italic_2": (r"\*(.*?)\*", r"<i>\1</i>"),
+        "italic_bold": (r"\*\*\_(.*?)\_\*\*", r"<i><b>\1</b></i>"),
         "code": (r"`(.*?)`", r"<code>\1</code>"),
+        "underline": (r"__(.*?)__", r"<u>\1</u>"),
+        "strike": (r"~~(.*?)~~", r"<s>\1</s>"),
+        
     }
     
     def __init__(self, guild_id: str, token: str) -> None:
@@ -50,7 +55,6 @@ class Events:
     def __markdown(self, text: str) -> str:
         for regex, rep in self.__regex.values():
             text = re.sub(regex, rep, text)
-            print(text)
         return text
         
         
