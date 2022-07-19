@@ -5,12 +5,12 @@ from models import GitHub
 
 dotenv.load_dotenv()
 app = Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 31536000
+app.secret_key = os.environ.get('APP_SECRET_KEY')
 events = Events(
     guild_id="818251363012182023",
     token=os.environ.get('DISCORD_TOKEN')
 ) 
-
-app.secret_key = os.environ.get('APP_SECRET_KEY')
 
 @app.route('/')
 def index():

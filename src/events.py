@@ -33,7 +33,7 @@ class Events:
                     "description": self.__markdown(event["description"]),
                     "image": (
                         None,
-                        f"https://cdn.discordapp.com/guild-events/{event['id']}/{event['image']}.png?size=4096"
+                        f"https://cdn.discordapp.com/guild-events/{event['id']}/{event['image']}.webp?size=4096"
                     )[bool(event["image"])],
                     "start_time": event["scheduled_start_time"],
                     "date": datetime.fromisoformat(event["scheduled_start_time"]).strftime("%d/%m/%Y %H:%M"),
@@ -42,7 +42,7 @@ class Events:
                         "name": event["creator"]["username"],
                         "avatar": (
                             None,
-                            f"https://cdn.discordapp.com/avatars/{event['creator']['id']}/{event['creator']['avatar']}.png?size=256"
+                            f"https://cdn.discordapp.com/avatars/{event['creator']['id']}/{event['creator']['avatar']}.webp?size=256"
                         )[bool(event['creator']['avatar'])],
                     }
                 }
