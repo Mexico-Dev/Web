@@ -31,6 +31,9 @@ class Leaderboard:
         return datetime.strptime(self.__to_init, "%Y/%m/%d %H:%M")
 
     async def get_leaderboard(self):
+        if not self.__advent_of_code_api or not self.__cookie:
+            return None
+        
         leaderboard = await asyncio.get_event_loop().run_in_executor(None, lambda: requests.get(
             self.__advent_of_code_api,
             cookies={"session": self.__cookie}
