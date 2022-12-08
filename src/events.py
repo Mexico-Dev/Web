@@ -6,23 +6,23 @@ import pytz
 
 
 class Events:
-    __discord_api: str = "https://discord.com/api/v9"
-    __regex: dict[str, tuple[str, str]] = {
+    __discord_api = "https://discord.com/api/v9"
+    __regex = {
         "bold": (r"\*\*(.*?)\*\*", r"<b>\1</b>"),
         "italic": (r"_(.*?)_", r"<i>\1</i>"),
         "italic_2": (r"\*(.*?)\*", r"<i>\1</i>"),
         "italic_bold": (r"\*\*\_(.*?)\_\*\*", r"<i><b>\1</b></i>"),
         "code": (r"`(.*?)`", r"<code>\1</code>"),
         "underline": (r"__(.*?)__", r"<u>\1</u>"),
-        "strike": (r"~~(.*?)~~", r"<s>\1</s>"),
+        "strike": (r"~~(.*?)~~", r"<s>\1</s>")
     }
 
     def __init__(self, guild_id: str, token: str) -> None:
-        self.__backups: list[dict] = []
-        self.__last_update: datetime = datetime.now() - timedelta(minutes=1)
-        self.__guild_id: str = guild_id
+        self.__backups = []
+        self.__last_update = datetime.now() - timedelta(minutes=1)
+        self.__guild_id = guild_id
 
-        self.__headers: dict[str, str] = requests.utils.default_headers()
+        self.__headers = requests.utils.default_headers()
         self.__headers["authorization"] = token
 
     def __markdown(self, text: str) -> str:
@@ -47,7 +47,7 @@ class Events:
     @property
     def list(self) -> list[dict]:
         self.__updated()
-        events: list[dict] = []
+        events = []
         for event in self.__backups:
             event = {
                 "name": event["name"],

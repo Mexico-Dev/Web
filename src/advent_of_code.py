@@ -12,7 +12,7 @@ class Leaderboard:
         self.__cookie = cookie
 
     @property
-    def table(self) -> dict | datetime:
+    def table(self):
         if self.__to_init <= datetime.now().strftime("%Y/%m/%d %H:%M") <= self.__to_finish:
             leaderboard = asyncio.run(self.get_leaderboard())
             if leaderboard:
