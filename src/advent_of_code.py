@@ -7,7 +7,7 @@ class Leaderboard:
     __to_init = f"{datetime.now().year}/11/30 00:00"
     __to_finish = f"{datetime.now().year}/12/24 00:00"
 
-    def __init__(self, api: str, cookie: str) -> None:
+    def __init__(self, api: str, cookie: str):
         self.__advent_of_code_api = api
         self.__cookie = cookie
 
@@ -30,7 +30,7 @@ class Leaderboard:
             return {}
         return datetime.strptime(self.__to_init, "%Y/%m/%d %H:%M")
 
-    async def get_leaderboard(self) -> dict:
+    async def get_leaderboard(self):
         leaderboard = await asyncio.get_event_loop().run_in_executor(None, lambda: requests.get(
             self.__advent_of_code_api,
             cookies={"session": self.__cookie}

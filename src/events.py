@@ -17,7 +17,7 @@ class Events:
         "strike": (r"~~(.*?)~~", r"<s>\1</s>")
     }
 
-    def __init__(self, guild_id: str, token: str) -> None:
+    def __init__(self, guild_id: str, token: str):
         self.__backups = []
         self.__last_update = datetime.now() - timedelta(minutes=1)
         self.__guild_id = guild_id
@@ -25,13 +25,13 @@ class Events:
         self.__headers = requests.utils.default_headers()
         self.__headers["authorization"] = token
 
-    def __markdown(self, text: str) -> str:
+    def __markdown(self, text: str):
         if text:
             for regex, rep in self.__regex.values():
                 text = re.sub(regex, rep, text)
             return text
 
-    def __updated(self) -> None:
+    def __updated(self):
         if self.__last_update <= datetime.now():
             self.__backups = asyncio.run(self.__get_events())
             self.__last_update = datetime.now() + timedelta(minutes=1)
@@ -45,7 +45,7 @@ class Events:
         return events.json() if events.status_code == 200 else self.__backups
 
     @property
-    def list(self) -> list[dict]:
+    def list(self):
         self.__updated()
         events = []
         for event in self.__backups:
