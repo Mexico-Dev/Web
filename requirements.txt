@@ -1,6 +1,6 @@
 # mxdev\app.py: 1
 Flask == 2.1.2
-
+Werkzeug==2.2.2
 # mxdev\app.py: 3
 python_dotenv == 0.20.0
 
